@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint ./src",
-    "start": "cross-env NODE_ENV=development babel-node ./server.js",
+    "start": "cross-env NODE_ENV=development babel-node ./server/index.js",
     "build": "rimraf dist && webpack --config ./webpack.config.prod.js",
-    "serve": "cross-env NODE_ENV=production babel-node ./server.js"
+    "serve": "cross-env NODE_ENV=production babel-node ./server/index.js"
   },
   "author": "Justin Jung <justinjung04@gmail.com>",
   "license": "MIT",
@@ -33,6 +33,7 @@
     "postcss-loader": "^0.9.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-hot-loader": "next",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
     "react-router-redux": "^4.0.5",

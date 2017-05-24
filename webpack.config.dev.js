@@ -3,7 +3,9 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+	devtool: '#source-map',
 	entry: [
+		'react-hot-loader/patch',
 		'webpack-hot-middleware/client',
 		path.resolve(__dirname, 'src')
 	],
